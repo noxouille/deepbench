@@ -1,0 +1,55 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 18.09 (build 687447)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2016-     Facebook, Inc            (Adam Paszke)
+Copyright (c) 2014-     Facebook, Inc            (Soumith Chintala)
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+Benchmarks for Conv3x3/1
+Forward Pass Time : 0.00691089391708374
+Backward Pass Time : 0.00043509483337402345
+Total Time : 0.007345988750457764
+Benchmarks for Conv5x5/1
+Forward Pass Time : 0.0002656078338623047
+Backward Pass Time : 0.0005273795127868652
+Total Time : 0.00079298734664917
+Benchmarks for Conv3x3/2
+Forward Pass Time : 7.824182510375977e-05
+Backward Pass Time : 0.00016524314880371095
+Total Time : 0.0002434849739074707
+Benchmarks for Conv5x5/2
+Forward Pass Time : 9.578466415405273e-05
+Backward Pass Time : 0.00019690990447998046
+Total Time : 0.0002926945686340332
+Benchmarks for Maxpool
+Forward Pass Time : 2.5382041931152342e-05
+Backward Pass Time : 3.8800239562988283e-05
+Total Time : 6.418228149414062e-05
+Benchmarks for Meanpool
+Forward Pass Time : 1.9979476928710937e-05
+Backward Pass Time : 3.081083297729492e-05
+Total Time : 5.079030990600586e-05
+Benchmarks for BatchNorm
+Forward Pass Time : 7.439374923706054e-05
+Backward Pass Time : 6.891965866088867e-05
+Total Time : 0.00014331340789794922
+Benchmarks for Dense
+Forward Pass Time : 0.0016348934173583984
+Backward Pass Time : 0.0001000213623046875
+Total Time : 0.001734914779663086

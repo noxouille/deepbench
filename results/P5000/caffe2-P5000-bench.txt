@@ -1,0 +1,30 @@
+
+============
+== Caffe2 ==
+============
+
+NVIDIA Release 18.06 (build 474750)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+All contributions by Facebook: Copyright (c) 2016, 2017 Facebook Inc.
+All contributions by Google: Copyright (c) 2015 Google Inc.  All rights reserved.
+All contributions by Yangqing Jia: Copyright (c) 2015 Yangqing Jia All rights reserved.
+All contributions from Caffe: Copyright(c) 2013, 2014, 2015, the respective contributors. All rights reserved.
+All other contributions: Copyright(c) 2015, 2016, 2017, the respective contributors. All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+running benchmark for framework caffe2
+caffe2's vgg16 eval at fp32: 67.1ms avg
+caffe2's vgg16 train at fp32: 231.0ms avg
+caffe2's resnet152 eval at fp32: 110.6ms avg
+caffe2's resnet152 train at fp32: 322.5ms avg
+caffe2's densenet161 eval at fp32: 0ms avg
+caffe2's densenet161 train at fp32: 0ms avg
+caffe2's vgg16 eval at fp16: 57.8ms avg
+caffe2's vgg16 train at fp16: 204.6ms avg
+caffe2's resnet152 eval at fp16: 86.0ms avg
+caffe2's resnet152 train at fp16: 258.7ms avg
+caffe2's densenet161 eval at fp16: 0ms avg
+caffe2's densenet161 train at fp16: 0ms avg

@@ -1,0 +1,42 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 18.06 (build 497677)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2016-     Facebook, Inc            (Adam Paszke)
+Copyright (c) 2014-     Facebook, Inc            (Soumith Chintala)
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+running benchmark for framework pytorch
+cuda version= 9.0.176
+cudnn version= 7104
+/home/frameworks/pytorch/models.py:17: UserWarning: volatile was removed and now has no effect. Use `with torch.no_grad():` instead.
+  self.eval_input = torch.autograd.Variable(x, volatile=True).cuda() if precision == 'fp32' \
+pytorch's vgg16 eval at fp32: 54.9ms avg
+pytorch's vgg16 train at fp32: 177.9ms avg
+pytorch's resnet152 eval at fp32: 85.1ms avg
+pytorch's resnet152 train at fp32: 292.0ms avg
+pytorch's densenet161 eval at fp32: 85.4ms avg
+pytorch's densenet161 train at fp32: 296.8ms avg
+/home/frameworks/pytorch/models.py:18: UserWarning: volatile was removed and now has no effect. Use `with torch.no_grad():` instead.
+  else torch.autograd.Variable(x, volatile=True).cuda().half()
+pytorch's vgg16 eval at fp16: 47.5ms avg
+pytorch's vgg16 train at fp16: 157.1ms avg
+pytorch's resnet152 eval at fp16: 70.3ms avg
+pytorch's resnet152 train at fp16: 266.7ms avg
+pytorch's densenet161 eval at fp16: 69.4ms avg
+pytorch's densenet161 train at fp16: 267.3ms avg

@@ -1,0 +1,7 @@
+The models are being run on input size of (16, 3, 224, 224)
+The time is the average over 20 iterations
+********** Model <function vgg16 at 0x7f0924711400> **********
+Forward Pass Time : 24823.5ms
+Backward Pass Time : 39893.4ms
+Total Time : 64716.9ms
+Inference Time : 22836.8ms

@@ -1,0 +1,4 @@
+running benchmark for framework pytorch
+The time is the average over 20 iterations
+pytorch's vgg16 eval at cpu: 15640.3ms
+pytorch's vgg16 train at cpu: 53419.1ms

@@ -1,0 +1,75 @@
+
+================
+== TensorFlow ==
+================
+
+NVIDIA Release 18.09 (build 687558)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+Copyright 2017 The TensorFlow Authors.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+running benchmark for framework tensorflow
+The time is the average over 20 iterations
+2018-10-11 07:15:33.602636: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:890] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-10-11 07:15:33.603204: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:01:00.0
+totalMemory: 10.91GiB freeMemory: 10.67GiB
+2018-10-11 07:15:33.603217: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-10-11 07:15:34.708048: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-11 07:15:34.708117: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-10-11 07:15:34.708140: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-10-11 07:15:34.709087: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10322 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-10-11 07:15:38.090735: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-10-11 07:15:38.090769: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-11 07:15:38.090790: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-10-11 07:15:38.090794: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-10-11 07:15:38.090957: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10322 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+tensorflow's vgg16 eval at fp32: 40.0ms
+tensorflow's vgg16 train at fp32: 122.2ms
+WARNING:tensorflow:From /home/frameworks/tensorflow/tf_models/convnet_builder.py:372: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-10-11 07:15:48.196322: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-10-11 07:15:48.196353: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-11 07:15:48.196373: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-10-11 07:15:48.196377: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-10-11 07:15:48.196567: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10322 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-10-11 07:15:55.591527: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-10-11 07:15:55.591571: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-11 07:15:55.591578: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-10-11 07:15:55.591582: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-10-11 07:15:55.591810: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10322 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+tensorflow's resnet152 eval at fp32: 61.7ms
+tensorflow's resnet152 train at fp32: 285.9ms
+tensorflow's densenet161 eval at fp32: 0ms
+tensorflow's densenet161 train at fp32: 0ms
+2018-10-11 07:16:10.031886: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-10-11 07:16:10.031932: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-11 07:16:10.031938: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-10-11 07:16:10.031943: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-10-11 07:16:10.032087: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10322 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-10-11 07:16:12.883851: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-10-11 07:16:12.883897: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-11 07:16:12.883904: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-10-11 07:16:12.883909: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-10-11 07:16:12.884134: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10322 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+tensorflow's vgg16 eval at fp16: 36.4ms
+tensorflow's vgg16 train at fp16: 107.2ms
+2018-10-11 07:16:22.572832: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-10-11 07:16:22.572878: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-11 07:16:22.572885: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-10-11 07:16:22.572889: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-10-11 07:16:22.573148: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10322 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-10-11 07:16:29.703740: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-10-11 07:16:29.703786: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-11 07:16:29.703793: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-10-11 07:16:29.703797: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-10-11 07:16:29.704024: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10322 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+tensorflow's resnet152 eval at fp16: 50.3ms
+tensorflow's resnet152 train at fp16: 242.7ms
+tensorflow's densenet161 eval at fp16: 0ms
+tensorflow's densenet161 train at fp16: 0ms

@@ -1,0 +1,43 @@
+
+============
+== Caffe2 ==
+============
+
+NVIDIA Release 18.08 (build 599137)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+All contributions by Facebook: Copyright (c) 2016, 2017 Facebook Inc.
+All contributions by Google: Copyright (c) 2015 Google Inc.  All rights reserved.
+All contributions by Yangqing Jia: Copyright (c) 2015 Yangqing Jia All rights reserved.
+All contributions from Caffe: Copyright(c) 2013, 2014, 2015, the respective contributors. All rights reserved.
+All other contributions: Copyright(c) 2015, 2016, 2017, the respective contributors. All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+WARNING: Detected NVIDIA GeForce RTX 2080 GPU, which is not yet supported in this version of the container
+ERROR: No NVIDIA supported GPU(s) detected to run this container
+
+running benchmark for framework caffe2
+The time is the average over 20 iterations
+Original python traceback for operator 0 in network `vgg16_1` in exception above (most recent call last):
+Traceback (most recent call last):
+  File "framework_benchmark.py", line 79, in <module>
+    results = Benchmark().benchmark_framework(args.framework)
+  File "framework_benchmark.py", line 58, in benchmark_framework
+    eval_duration = self.benchmark_model('eval', framework, model, precision)
+  File "framework_benchmark.py", line 37, in benchmark_model
+    durations = framework_model.eval(num_iterations, num_warmups) if mode == 'eval' else framework_model.train(num_iterations, num_warmups)
+  File "/home/frameworks/caffe2/models.py", line 49, in eval
+    durations.append(t2 - t1)
+  File "/usr/lib/python3.5/contextlib.py", line 77, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/opt/caffe2/caffe2/python/scope.py", line 91, in DeviceScope
+    yield
+  File "/home/frameworks/caffe2/models.py", line 45, in eval
+    workspace.RunNet(self.forward_net.Proto().name)
+  File "/opt/caffe2/caffe2/python/workspace.py", line 230, in RunNet
+    StringifyNetName(name), num_iter, allow_fail,
+  File "/opt/caffe2/caffe2/python/workspace.py", line 192, in CallWithExceptionIntercept
+    return func(*args, **kwargs)
+RuntimeError: [enforce fail at conv_op_cudnn.cc:757] status == CUDNN_STATUS_SUCCESS. 8 vs 0. , Error at: /opt/caffe2/caffe2/operators/conv_op_cudnn.cc:757: CUDNN_STATUS_EXECUTION_FAILED Error from operator: 
+input: "data" input: "conv1_1_w" input: "conv1_1_b" output: "conv1_1" name: "" type: "Conv" arg { name: "exhaustive_search" i: 0 } arg { name: "pad" i: 1 } arg { name: "order" s: "NCHW" } arg { name: "enable_tensor_core" i: 1 } arg { name: "kernel" i: 3 } device_option { device_type: 1 cuda_gpu_id: 0 } engine: "CUDNN" debug_info: "  File \"framework_benchmark.py\", line 79, in <module>\n    results = Benchmark().benchmark_framework(args.framework)\n  File \"framework_benchmark.py\", line 58, in benchmark_framework\n    eval_duration = self.benchmark_model(\'eval\', framework, model, precision)\n  File \"framework_benchmark.py\", line 35, in benchmark_model\n    framework_model = self.get_framework_model(framework, model)(precision, image_shape, batch_size)\n  File \"/home/frameworks/caffe2/models.py\", line 68, in __init__\n    caffe2_base.__init__(self, \'vgg16\', precision, image_shape, batch_size)\n  File \"/home/frameworks/caffe2/models.py\", line 17, in __init__\n    softmax = getattr(self, model_name + \'_model\')(model, \"data\", precision)\n  File \"/home/frameworks/caffe2/models.py\", line 76, in vgg16_model\n    conv1_1 = brew.conv(model, data, \'conv1_1\', dim_in=3, dim_out=64, kernel=3, pad=1)\n  File \"/opt/caffe2/caffe2/python/brew.py\", line 122, in scope_wrapper\n    return func(*args, **new_kwargs)\n  File \"/opt/caffe2/caffe2/python/helpers/conv.py\", line 198, in conv\n    group, transform_inputs, **kwargs)\n  File \"/opt/caffe2/caffe2/python/helpers/conv.py\", line 145, in _ConvBase\n    **kwargs)\n  File \"/opt/caffe2/caffe2/python/core.py\", line 2047, in <lambda>\n    op_type, *args, **kwargs)\n  File \"/opt/caffe2/caffe2/python/core.py\", line 2024, in _CreateAndAddToSelf\n    op = CreateOperator(op_type, inputs, outputs, **kwargs)\n"

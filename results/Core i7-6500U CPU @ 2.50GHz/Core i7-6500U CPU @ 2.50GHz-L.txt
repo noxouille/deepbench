@@ -1,0 +1,32 @@
+Benchmarks for Conv3x3/1
+Forward Pass Time : 0.012383675575256348
+Backward Pass Time : 0.00999600887298584
+Total Time : 0.022379684448242187
+Benchmarks for Conv5x5/1
+Forward Pass Time : 0.018364644050598143
+Backward Pass Time : 0.01460925579071045
+Total Time : 0.03297389984130859
+Benchmarks for Conv3x3/2
+Forward Pass Time : 0.0033497524261474607
+Backward Pass Time : 0.002781388759613037
+Total Time : 0.006131141185760498
+Benchmarks for Conv5x5/2
+Forward Pass Time : 0.005476753711700439
+Backward Pass Time : 0.0035963988304138182
+Total Time : 0.009073152542114257
+Benchmarks for Maxpool
+Forward Pass Time : 0.0017799568176269532
+Backward Pass Time : 0.00012074708938598633
+Total Time : 0.0019007039070129395
+Benchmarks for Meanpool
+Forward Pass Time : 0.0007117342948913574
+Backward Pass Time : 0.00012673139572143554
+Total Time : 0.000838465690612793
+Benchmarks for BatchNorm
+Forward Pass Time : 0.0006474184989929199
+Backward Pass Time : 0.0005046916007995605
+Total Time : 0.0011521100997924805
+Benchmarks for Dense
+Forward Pass Time : 0.00044469594955444337
+Backward Pass Time : 0.001595633029937744
+Total Time : 0.0020403289794921876
