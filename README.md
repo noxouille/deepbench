@@ -24,7 +24,6 @@ Performance of CPUs and GPUs are compared, including the effect of adjusting the
     - [Framework-wise benchmark](#framework-wise-benchmark)
 - [Docker support](#docker-support)
 - [Visualized Results](#visualized-results)
-- [Contributors](#contributors)
 
 <!-- /TOC -->
 
@@ -99,4 +98,4 @@ The following command will create a result subdirectory (if it doesn't exist), a
 
 ## Visualized Results
 
-The results are now visualized [here](https://noxouille.github.io/tech/2018/07/22/gpu-benchmark/).
+The results are now visualized [here](https://noxouille.github.io/tech/2018/10/15/deepbench-result/).
