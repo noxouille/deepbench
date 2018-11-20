@@ -1,0 +1,55 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 18.09 (build 687447)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2016-     Facebook, Inc            (Adam Paszke)
+Copyright (c) 2014-     Facebook, Inc            (Soumith Chintala)
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+Benchmarks for Conv3x3/1
+Forward Pass Time : 8.9515ms
+Backward Pass Time : 0.4055ms
+Total Time : 9.3570ms
+Benchmarks for Conv5x5/1
+Forward Pass Time : 0.2031ms
+Backward Pass Time : 0.4832ms
+Total Time : 0.6863ms
+Benchmarks for Conv3x3/2
+Forward Pass Time : 0.1276ms
+Backward Pass Time : 0.2018ms
+Total Time : 0.3294ms
+Benchmarks for Conv5x5/2
+Forward Pass Time : 0.0926ms
+Backward Pass Time : 0.1690ms
+Total Time : 0.2617ms
+Benchmarks for Maxpool
+Forward Pass Time : 0.0278ms
+Backward Pass Time : 0.0425ms
+Total Time : 0.0702ms
+Benchmarks for Meanpool
+Forward Pass Time : 0.0229ms
+Backward Pass Time : 0.0417ms
+Total Time : 0.0646ms
+Benchmarks for BatchNorm
+Forward Pass Time : 0.1252ms
+Backward Pass Time : 0.1329ms
+Total Time : 0.2581ms
+Benchmarks for Dense
+Forward Pass Time : 2.1257ms
+Backward Pass Time : 0.2079ms
+Total Time : 2.3336ms
