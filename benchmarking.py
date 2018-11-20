@@ -42,9 +42,9 @@ def run_benchmarks(arr, batch_size, n_iters):
         forward_pass_time_mean = get_duration_mean_ms(forward_pass_time)
         backward_pass_time_mean = get_duration_mean_ms(backward_pass_time)
         total_time = forward_pass_time_mean + backward_pass_time_mean
-        print("Forward Pass Time : {}ms".format(round(forward_pass_time_mean, 1)))
-        print("Backward Pass Time : {}ms".format(round(backward_pass_time_mean, 1)))
-        print("Total Time : {}ms".format(round(total_time, 1)))
+        print("Forward Pass Time : {0:.4f}ms".format(forward_pass_time_mean))
+        print("Backward Pass Time : {0:.4f}ms".format(backward_pass_time_mean))
+        print("Total Time : {0:.4f}ms".format(total_time))
 
         model.eval()
         for i in range(n_iters):
