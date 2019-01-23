@@ -1,0 +1,77 @@
+                                                                                                                                                
+================
+== TensorFlow ==
+================
+
+NVIDIA Release 18.11 (build 838557)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+Copyright 2017-2018 The TensorFlow Authors.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: MOFED driver for multi-node communication was not detected.
+      Multi-node communication performance may be reduced.
+
+running benchmark for framework tensorflow
+The time is the average over 20 iterations
+2019-01-22 00:39:12.618795: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Quadro GP100 major: 6 minor: 0 memoryClockRate(GHz): 1.4425
+pciBusID: 0000:01:00.0
+totalMemory: 15.89GiB freeMemory: 15.40GiB
+2019-01-22 00:39:12.618855: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-22 00:39:12.992148: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-22 00:39:12.992200: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-22 00:39:12.992209: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-22 00:39:12.992621: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14924 MB memory) -> physical GPU (device: 0, name: Quadro GP100, pci bus id: 0000:01:00.0, compute capability: 6.0)
+2019-01-22 00:39:17.061580: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-22 00:39:17.061671: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-22 00:39:17.061684: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-22 00:39:17.061709: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-22 00:39:17.061867: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14924 MB memory) -> physical GPU (device: 0, name: Quadro GP100, pci bus id: 0000:01:00.0, compute capability: 6.0)
+tensorflow's vgg16 eval at fp32: 36.7ms
+tensorflow's vgg16 train at fp32: 109.2ms
+WARNING:tensorflow:From /home/frameworks/tensorflow/tf_models/convnet_builder.py:372: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2019-01-22 00:39:29.930077: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-22 00:39:29.930155: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-22 00:39:29.930170: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-22 00:39:29.930178: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-22 00:39:29.930446: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14924 MB memory) -> physical GPU (device: 0, name: Quadro GP100, pci bus id: 0000:01:00.0, compute capability: 6.0)
+2019-01-22 00:39:41.149663: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-22 00:39:41.149731: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-22 00:39:41.149759: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-22 00:39:41.149768: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-22 00:39:41.150055: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14924 MB memory) -> physical GPU (device: 0, name: Quadro GP100, pci bus id: 0000:01:00.0, compute capability: 6.0)
+tensorflow's resnet152 eval at fp32: 58.3ms
+tensorflow's resnet152 train at fp32: 278.1ms
+tensorflow's densenet161 eval at fp32: 0ms
+tensorflow's densenet161 train at fp32: 0ms
+2019-01-22 00:39:56.891850: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-22 00:39:56.891915: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-22 00:39:56.891928: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-22 00:39:56.891952: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-22 00:39:56.892196: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14924 MB memory) -> physical GPU (device: 0, name: Quadro GP100, pci bus id: 0000:01:00.0, compute capability: 6.0)
+2019-01-22 00:40:00.308901: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-22 00:40:00.308960: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-22 00:40:00.308970: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-22 00:40:00.308979: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-22 00:40:00.309176: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14924 MB memory) -> physical GPU (device: 0, name: Quadro GP100, pci bus id: 0000:01:00.0, compute capability: 6.0)
+tensorflow's vgg16 eval at fp16: 34.8ms
+tensorflow's vgg16 train at fp16: 103.6ms
+2019-01-22 00:40:13.392808: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-22 00:40:13.392878: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-22 00:40:13.392890: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-22 00:40:13.392916: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-22 00:40:13.393161: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14924 MB memory) -> physical GPU (device: 0, name: Quadro GP100, pci bus id: 0000:01:00.0, compute capability: 6.0)
+2019-01-22 00:40:24.965067: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-22 00:40:24.965136: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-22 00:40:24.965149: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-22 00:40:24.965176: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-22 00:40:24.965414: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14924 MB memory) -> physical GPU (device: 0, name: Quadro GP100, pci bus id: 0000:01:00.0, compute capability: 6.0)
+tensorflow's resnet152 eval at fp16: 52.5ms
+tensorflow's resnet152 train at fp16: 249.6ms
+tensorflow's densenet161 eval at fp16: 0ms
+tensorflow's densenet161 train at fp16: 0ms
