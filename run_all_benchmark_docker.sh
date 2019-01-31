@@ -10,7 +10,7 @@ fi
 DOCKER_CMD="docker run -it --rm --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=0 -v $(pwd):/home -w /home"
 NGC_LINK="nvcr.io/nvidia"
 CAFFE_TAG="18.08-py3" # This is the final version of Caffe2 container from NGC
-TAG="18.09-py3"
+TAG="18.11-py3"
 
 DEVICE=$1
 RESULTS_DIR="results/$DEVICE"
@@ -23,7 +23,7 @@ else echo "Creating result subdirectory..."; mkdir -p $RESULTS_DIR;
 fi
 
 echo "Running Framework-wise benchmark with Caffe2:${CAFFE_TAG}..."
-$DOCKER_CMD --shm-size=1g --ulimit memlock=-1 $NGC_LINK/caffe2:$CAFFE_TAG python3 framework_benchmark.py -f caffe2 > $RESULTS_DIR/$DEVICE-F-caffe2.txt
+$DOCKER_CMD --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 $NGC_LINK/caffe2:$CAFFE_TAG python3 framework_benchmark.py -f caffe2 > $RESULTS_DIR/$DEVICE-F-caffe2.txt
 echo "Done!"
 
 echo "Running Framework-wise benchmark with Pytorch:${TAG}..."
