@@ -3,7 +3,7 @@
 ![NGC](https://img.shields.io/badge/ngc-18.09--py3-%2374b71b.svg)
 ![CUDA](https://img.shields.io/badge/cuda-10.0-%2374b71b.svg)
 ![cuDNN](https://img.shields.io/badge/cudnn-7.3.0-%2374b71b.svg)
-![NVIDIA Driver](https://img.shields.io/badge/nvidia%20driver-410.57-%2374b71b.svg)
+![NVIDIA Driver](https://img.shields.io/badge/nvidia%20driver-415.27-2374b71b.svg)
 ![Pytorch](https://img.shields.io/badge/pytorch-0.4.1%2B-%23ee4c2c.svg)
 ![TF](https://img.shields.io/badge/tensorflow-1.10.0-orange.svg)
 ![Caffe2](https://img.shields.io/badge/caffe2-0.8.1-%2325376b.svg)
@@ -86,7 +86,9 @@ Available frameworks to test:
 * tensorFlow (GPU only)
 * caffe2 (GPU only)
 
-P.S.: for some reason, with Zotac 1080Ti, caffe2 seems to have "out of memory" error for fp16 benchmark. It wasn't the case With GV100 and P5000 from NVIDIA.
+P.S.: 
+- for some reason, with Zotac 1080Ti, caffe2 seems to have "out of memory" error for fp16 benchmark. It wasn't the case With GV100 and P5000 from NVIDIA.
+- Caffe2 container does not officialy supported for TITAN RTX, therefore from now on, only pytorch and tensorflow will be considered for comparison.
 
 ## Docker support
 
