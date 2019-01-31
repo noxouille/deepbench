@@ -1,0 +1,77 @@
+                                                                                                                                                
+================
+== TensorFlow ==
+================
+
+NVIDIA Release 18.11 (build 838557)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+Copyright 2017-2018 The TensorFlow Authors.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: MOFED driver for multi-node communication was not detected.
+      Multi-node communication performance may be reduced.
+
+running benchmark for framework tensorflow
+The time is the average over 20 iterations
+2019-01-30 07:31:19.498063: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: TITAN V major: 7 minor: 0 memoryClockRate(GHz): 1.455
+pciBusID: 0000:17:00.0
+totalMemory: 11.75GiB freeMemory: 11.15GiB
+2019-01-30 07:31:19.498103: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-30 07:31:20.710960: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-30 07:31:20.711031: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-30 07:31:20.711046: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-30 07:31:20.711471: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10768 MB memory) -> physical GPU (device: 0, name: TITAN V, pci bus id: 0000:17:00.0, compute capability: 7.0)
+2019-01-30 07:31:26.251580: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-30 07:31:26.251627: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-30 07:31:26.251633: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-30 07:31:26.251638: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-30 07:31:26.251734: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10768 MB memory) -> physical GPU (device: 0, name: TITAN V, pci bus id: 0000:17:00.0, compute capability: 7.0)
+tensorflow's vgg16 eval at fp32: 27.2ms
+tensorflow's vgg16 train at fp32: 84.3ms
+WARNING:tensorflow:From /home/frameworks/tensorflow/tf_models/convnet_builder.py:372: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2019-01-30 07:31:37.720825: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-30 07:31:37.720875: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-30 07:31:37.720884: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-30 07:31:37.720891: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-30 07:31:37.720996: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10768 MB memory) -> physical GPU (device: 0, name: TITAN V, pci bus id: 0000:17:00.0, compute capability: 7.0)
+2019-01-30 07:31:46.753551: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-30 07:31:46.753597: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-30 07:31:46.753605: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-30 07:31:46.753612: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-30 07:31:46.753714: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10768 MB memory) -> physical GPU (device: 0, name: TITAN V, pci bus id: 0000:17:00.0, compute capability: 7.0)
+tensorflow's resnet152 eval at fp32: 47.0ms
+tensorflow's resnet152 train at fp32: 231.8ms
+tensorflow's densenet161 eval at fp32: 0ms
+tensorflow's densenet161 train at fp32: 0ms
+2019-01-30 07:32:01.141323: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-30 07:32:01.141373: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-30 07:32:01.141382: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-30 07:32:01.141389: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-30 07:32:01.141492: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10768 MB memory) -> physical GPU (device: 0, name: TITAN V, pci bus id: 0000:17:00.0, compute capability: 7.0)
+2019-01-30 07:32:04.241159: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-30 07:32:04.241208: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-30 07:32:04.241220: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-30 07:32:04.241228: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-30 07:32:04.241337: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10768 MB memory) -> physical GPU (device: 0, name: TITAN V, pci bus id: 0000:17:00.0, compute capability: 7.0)
+tensorflow's vgg16 eval at fp16: 14.9ms
+tensorflow's vgg16 train at fp16: 42.4ms
+2019-01-30 07:32:15.680555: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-30 07:32:15.680599: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-30 07:32:15.680606: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-30 07:32:15.680612: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-30 07:32:15.680714: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10768 MB memory) -> physical GPU (device: 0, name: TITAN V, pci bus id: 0000:17:00.0, compute capability: 7.0)
+2019-01-30 07:32:24.072653: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-30 07:32:24.072704: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-30 07:32:24.072712: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-30 07:32:24.072720: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-30 07:32:24.072828: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10768 MB memory) -> physical GPU (device: 0, name: TITAN V, pci bus id: 0000:17:00.0, compute capability: 7.0)
+tensorflow's resnet152 eval at fp16: 25.3ms
+tensorflow's resnet152 train at fp16: 153.7ms
+tensorflow's densenet161 eval at fp16: 0ms
+tensorflow's densenet161 train at fp16: 0ms

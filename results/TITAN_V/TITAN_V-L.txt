@@ -1,0 +1,58 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 18.11 (build 817378)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2016-     Facebook, Inc            (Adam Paszke)
+Copyright (c) 2014-     Facebook, Inc            (Soumith Chintala)
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: MOFED driver for multi-node communication was not detected.
+      Multi-node communication performance may be reduced.
+
+Benchmarks for Conv3x3/1
+Forward Pass Time : 9.4648ms
+Backward Pass Time : 0.4142ms
+Total Time : 9.8790ms
+Benchmarks for Conv5x5/1
+Forward Pass Time : 0.2380ms
+Backward Pass Time : 0.4347ms
+Total Time : 0.6727ms
+Benchmarks for Conv3x3/2
+Forward Pass Time : 0.2028ms
+Backward Pass Time : 0.2120ms
+Total Time : 0.4148ms
+Benchmarks for Conv5x5/2
+Forward Pass Time : 0.1361ms
+Backward Pass Time : 0.1771ms
+Total Time : 0.3132ms
+Benchmarks for Maxpool
+Forward Pass Time : 0.0431ms
+Backward Pass Time : 0.0656ms
+Total Time : 0.1087ms
+Benchmarks for Meanpool
+Forward Pass Time : 0.0329ms
+Backward Pass Time : 0.0600ms
+Total Time : 0.0928ms
+Benchmarks for BatchNorm
+Forward Pass Time : 0.1254ms
+Backward Pass Time : 0.1131ms
+Total Time : 0.2386ms
+Benchmarks for Dense
+Forward Pass Time : 2.0292ms
+Backward Pass Time : 0.1423ms
+Total Time : 2.1715ms

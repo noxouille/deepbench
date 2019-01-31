@@ -1,0 +1,42 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 18.11 (build 817378)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2016-     Facebook, Inc            (Adam Paszke)
+Copyright (c) 2014-     Facebook, Inc            (Soumith Chintala)
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: MOFED driver for multi-node communication was not detected.
+      Multi-node communication performance may be reduced.
+
+running benchmark for framework pytorch
+The time is the average over 20 iterations
+cuda version= 10.0.130
+cudnn version= 7401
+pytorch's vgg16 eval at fp32: 26.3ms
+pytorch's vgg16 train at fp32: 88.3ms
+pytorch's resnet152 eval at fp32: 44.7ms
+pytorch's resnet152 train at fp32: 153.3ms
+pytorch's densenet161 eval at fp32: 45.7ms
+pytorch's densenet161 train at fp32: 149.2ms
+pytorch's vgg16 eval at fp16: 13.9ms
+pytorch's vgg16 train at fp16: 48.6ms
+pytorch's resnet152 eval at fp16: 22.2ms
+pytorch's resnet152 train at fp16: 86.7ms
+pytorch's densenet161 eval at fp16: 27.4ms
+pytorch's densenet161 train at fp16: 95.8ms

@@ -1,0 +1,73 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 18.11 (build 817378)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2016-     Facebook, Inc            (Adam Paszke)
+Copyright (c) 2014-     Facebook, Inc            (Soumith Chintala)
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: MOFED driver for multi-node communication was not detected.
+      Multi-node communication performance may be reduced.
+
+The models are being run on input size of (16, 3, 224, 224)
+The time is the average over 20 iterations
+********** Model <function vgg16 at 0x7f3274209268> **********
+Forward Pass Time : 88.5250ms
+Backward Pass Time : 84.3927ms
+Total Time : 172.9178ms
+Inference Time : 32.1ms
+********** Model <function vgg16_bn at 0x7f32742092f0> **********
+Forward Pass Time : 36.2390ms
+Backward Pass Time : 90.2053ms
+Total Time : 126.4443ms
+Inference Time : 37.6ms
+********** Model <function vgg19 at 0x7f3274209378> **********
+Forward Pass Time : 39.1680ms
+Backward Pass Time : 102.0068ms
+Total Time : 141.1748ms
+Inference Time : 39.0ms
+********** Model <function vgg19_bn at 0x7f3274209400> **********
+Forward Pass Time : 43.7316ms
+Backward Pass Time : 109.0694ms
+Total Time : 152.8010ms
+Inference Time : 43.4ms
+********** Model <function resnet18 at 0x7f32742001e0> **********
+Forward Pass Time : 7.2037ms
+Backward Pass Time : 16.3683ms
+Total Time : 23.5720ms
+Inference Time : 7.3ms
+********** Model <function resnet34 at 0x7f3274200620> **********
+Forward Pass Time : 12.3227ms
+Backward Pass Time : 28.9479ms
+Total Time : 41.2706ms
+Inference Time : 12.3ms
+********** Model <function resnet50 at 0x7f32742006a8> **********
+Forward Pass Time : 20.6419ms
+Backward Pass Time : 45.9436ms
+Total Time : 66.5855ms
+Inference Time : 20.6ms
+********** Model <function resnet101 at 0x7f3274200730> **********
+Forward Pass Time : 34.7745ms
+Backward Pass Time : 79.1075ms
+Total Time : 113.8821ms
+Inference Time : 34.7ms
+********** Model <function resnet152 at 0x7f32742007b8> **********
+Forward Pass Time : 50.0850ms
+Backward Pass Time : 112.9059ms
+Total Time : 162.9910ms
+Inference Time : 49.9ms
