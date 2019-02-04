@@ -1,0 +1,77 @@
+                                                                                                                                                
+================
+== TensorFlow ==
+================
+
+NVIDIA Release 18.11 (build 838557)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+Copyright 2017-2018 The TensorFlow Authors.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: MOFED driver for multi-node communication was not detected.
+      Multi-node communication performance may be reduced.
+
+running benchmark for framework tensorflow
+The time is the average over 20 iterations
+2019-02-04 02:17:01.203262: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:09:00.0
+totalMemory: 14.73GiB freeMemory: 14.60GiB
+2019-02-04 02:17:01.203316: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-02-04 02:17:02.143163: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-02-04 02:17:02.143222: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-02-04 02:17:02.143230: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-02-04 02:17:02.144141: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14124 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:09:00.0, compute capability: 7.5)
+2019-02-04 02:17:13.000402: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-02-04 02:17:13.000459: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-02-04 02:17:13.000470: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-02-04 02:17:13.000477: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-02-04 02:17:13.000814: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14124 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:09:00.0, compute capability: 7.5)
+tensorflow's vgg16 eval at fp32: 77.6ms
+tensorflow's vgg16 train at fp32: 237.7ms
+WARNING:tensorflow:From /home/frameworks/tensorflow/tf_models/convnet_builder.py:372: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2019-02-04 02:17:39.090440: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-02-04 02:17:39.090495: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-02-04 02:17:39.090503: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-02-04 02:17:39.090510: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-02-04 02:17:39.090864: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14124 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:09:00.0, compute capability: 7.5)
+2019-02-04 02:17:53.133636: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-02-04 02:17:53.133691: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-02-04 02:17:53.133702: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-02-04 02:17:53.133720: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-02-04 02:17:53.134069: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14124 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:09:00.0, compute capability: 7.5)
+tensorflow's resnet152 eval at fp32: 115.8ms
+tensorflow's resnet152 train at fp32: 465.3ms
+tensorflow's densenet161 eval at fp32: 0ms
+tensorflow's densenet161 train at fp32: 0ms
+2019-02-04 02:18:20.004533: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-02-04 02:18:20.004578: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-02-04 02:18:20.004587: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-02-04 02:18:20.004593: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-02-04 02:18:20.004938: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14124 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:09:00.0, compute capability: 7.5)
+2019-02-04 02:18:26.427315: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-02-04 02:18:26.427361: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-02-04 02:18:26.427370: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-02-04 02:18:26.427378: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-02-04 02:18:26.427731: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14124 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:09:00.0, compute capability: 7.5)
+tensorflow's vgg16 eval at fp16: 41.4ms
+tensorflow's vgg16 train at fp16: 126.4ms
+2019-02-04 02:18:43.752701: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-02-04 02:18:43.752767: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-02-04 02:18:43.752778: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-02-04 02:18:43.752796: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-02-04 02:18:43.753122: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14124 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:09:00.0, compute capability: 7.5)
+2019-02-04 02:18:55.351780: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-02-04 02:18:55.351841: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-02-04 02:18:55.351849: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-02-04 02:18:55.351857: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-02-04 02:18:55.352198: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14124 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:09:00.0, compute capability: 7.5)
+tensorflow's resnet152 eval at fp16: 58.7ms
+tensorflow's resnet152 train at fp16: 270.3ms
+tensorflow's densenet161 eval at fp16: 0ms
+tensorflow's densenet161 train at fp16: 0ms
