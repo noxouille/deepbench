@@ -9,14 +9,13 @@ import numpy as np
 
 frameworks = [
     'pytorch',
-    'tensorflow',
-    'caffe2'
+    'tensorflow'
 ]
 
 models = [
     'vgg16',
-    'resnet152',
-    'densenet161'
+    'resnet50',
+    'resnet152'
 ]
 
 # TODO: modify this array assignment to ['cpu'] for cpu

@@ -6,7 +6,6 @@
 ![NVIDIA Driver](https://img.shields.io/badge/nvidia%20driver-415.27-2374b71b.svg)
 ![Pytorch](https://img.shields.io/badge/pytorch-0.4.1%2B-%23ee4c2c.svg)
 ![TF](https://img.shields.io/badge/tensorflow-1.10.0-orange.svg)
-![Caffe2](https://img.shields.io/badge/caffe2-0.8.1-%2325376b.svg)
 ![Contributions](https://img.shields.io/badge/contributions-welcome-lightgrey.svg)
 
 This repo contains device agnostic codes of framework-wise benchmark (adapted from [u93kun](https://github.com/u39kun/deep-learning-benchmark)) and also layer-wise plus model-wise benchmark (adapted from [avik-pal](https://github.com/avik-pal/DeepLearningBenchmarks)).
@@ -59,8 +58,9 @@ Tested layers:
 python3 model_benchmark.py
 ```
 
-The following models were tested with TensorFlow and Caffe2:
+The following models were tested with TensorFlow:
 * vgg16
+* resnet50  *NEWLY ADDED!
 * resnet152
 
 The following models are available to test with Pytorch:
@@ -84,11 +84,11 @@ python3 framework_benchmark.py -f <framework_name>
 Available frameworks to test:
 * pytorch
 * tensorFlow (GPU only)
-* caffe2 (GPU only)
+* ~~caffe2 (GPU only)~~
 
 P.S.: 
-- for some reason, with Zotac 1080Ti, caffe2 seems to have "out of memory" error for fp16 benchmark. It wasn't the case With GV100 and P5000 from NVIDIA.
-- Caffe2 container does not officialy supported for TITAN RTX, therefore from now on, only pytorch and tensorflow will be considered for comparison.
+- for some reason, with Zotac 1080Ti, caffe2 seems to have "out of memory" error for fp16 benchmark. It wasn't the case With GV100 and P5000 from NVIDIA. **UPDATE: it turns out something was wrong about pFP16Initializer which becomes PseudoFP16Initializer.**
+- Caffe2 container does not officialy supported for TITAN RTX, and since it philosophically designed with high emphasis on industrial mobile application, it makes no sense to measure it based on GPGPUs. Therefore from now on, only pytorch and tensorflow will be considered for comparison.
 
 ## Docker support
 
