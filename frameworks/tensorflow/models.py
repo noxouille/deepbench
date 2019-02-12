@@ -63,6 +63,10 @@ class vgg16(tensorflow_base):
   def __init__(self, precision, image_shape, batch_size):
     tensorflow_base.__init__(self, vgg_model.Vgg16Model, precision, image_shape, batch_size)
 
+class resnet50(tensorflow_base):
+
+  def __init__(self, precision, image_shape, batch_size):
+      tensorflow_base.__init__(self, resnet_model.create_resnet50_model, precision, image_shape, batch_size)
 
 class resnet152(tensorflow_base):
 
