@@ -67,6 +67,12 @@ class vgg16(pytorch_base):
     super().__init__('vgg16', precision, image_shape, batch_size)
 
 
+class resnet50(pytorch_base):
+
+  def __init__(self, precision, image_shape, batch_size):
+    super().__init__('resnet50', precision, image_shape, batch_size)
+
+
 class resnet152(pytorch_base):
 
   def __init__(self, precision, image_shape, batch_size):
